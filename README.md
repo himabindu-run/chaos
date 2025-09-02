@@ -1,8 +1,10 @@
-# Android with Kotlin - Week 2: Layouts and Interactions
+# Chaos - Android Learning App
+
+An android app for students to follow while learning in the 12 week bootcamp.
+
+## 📱 Week 2: Layouts and Interactions
 
 An educational Android app demonstrating layout techniques and interactive UI development for Week 2 of a 12-week Android development bootcamp.
-
-## 📱 App Features
 
 ### Layout Comparison Demo
 - **XML Layout**: Traditional Android layout using LinearLayout and XML resources
@@ -28,13 +30,6 @@ An educational Android app demonstrating layout techniques and interactive UI de
    - Lucky number detection
    - Statistics display
 
-## 🎯 Educational Goals
-
-- Transition from basic "About Me" pages to interactive applications
-- Learn layout management and responsive design
-- Understand event handling and state management
-- Build confidence through hands-on project development
-
 ## 🎓 For Students
 
 This app provides hands-on examples and interactive demos to help you learn:
@@ -59,10 +54,6 @@ Each section builds on the previous one, so start with "Making Better Layouts" a
 2. Open in Android Studio
 3. Sync project with Gradle files
 4. Run on device or emulator
-
-## 📖 Course Context
-
-This project is designed for **Week 2** of a 12-week Android development bootcamp, building upon basic layout knowledge from Week 1 and preparing students for more advanced topics in subsequent weeks.
 
 ## 🎨 App Structure
 
