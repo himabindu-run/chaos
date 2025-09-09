@@ -46,14 +46,14 @@ fun MainScreen(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Teaching Demo App",
+            text = "Android with Kotlin",
             fontSize = 36.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 16.dp)
         )
         
         Text(
-            text = "Android Development Concepts Showcase",
+            text = "Mobile App Development Course",
             fontSize = 18.sp,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(bottom = 48.dp)
@@ -77,12 +77,12 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Week 2 Demo: Layouts and Interactions",
+                    text = "Week 2: Layouts and Interactions",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = "Show students: UI layouts, click handling, dice app",
+                    text = "UI layouts, click handling, dice game",
                     fontSize = 14.sp
                 )
             }
@@ -108,12 +108,12 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Week 3 Demo: Lists and Data",
+                    text = "Week 3: Lists and Data",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = "Teach: Collections, RecyclerViews, data processing",
+                    text = "Collections, RecyclerViews, birthday tracker",
                     fontSize = 14.sp
                 )
             }
@@ -122,7 +122,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(32.dp))
         
         Text(
-            text = "Select demo content for your teaching session",
+            text = "Explore Android development concepts with examples",
             fontSize = 16.sp,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = androidx.compose.ui.text.style.TextAlign.Center
