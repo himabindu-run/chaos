@@ -41,162 +41,90 @@ fun MainScreen(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(24.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Android with Kotlin",
-            fontSize = 32.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 8.dp)
-        )
-        
-        Text(
-            text = "Week 2: Layouts and Interactions",
-            fontSize = 18.sp,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(bottom = 32.dp)
-        )
-        
-        // Layout Comparison Section
-        Text(
-            text = "Layout Comparison Demo",
-            fontSize = 20.sp,
+            fontSize = 36.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 16.dp)
         )
         
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        Text(
+            text = "Mobile App Development Course",
+            fontSize = 18.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 48.dp)
+        )
+        
+        // Week 2 Button
+        Button(
+            onClick = {
+                val intent = Intent(context, Week2Activity::class.java)
+                context.startActivity(intent)
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp),
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary
+            )
         ) {
-            Button(
-                onClick = {
-                    val intent = Intent(context, AboutXmlActivity::class.java)
-                    context.startActivity(intent)
-                },
-                modifier = Modifier
-                    .weight(1f)
-                    .height(48.dp),
-                shape = RoundedCornerShape(8.dp)
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text("XML Layout", fontSize = 14.sp)
+                Text(
+                    text = "Week 2: Layouts and Interactions",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "UI layouts, click handling, dice game",
+                    fontSize = 14.sp
+                )
             }
-            
-            Button(
-                onClick = {
-                    val intent = Intent(context, AboutComposeActivity::class.java)
-                    context.startActivity(intent)
-                },
-                modifier = Modifier
-                    .weight(1f)
-                    .height(48.dp),
-                shape = RoundedCornerShape(8.dp)
+        }
+        
+        Spacer(modifier = Modifier.height(20.dp))
+        
+        // Week 3 Button
+        Button(
+            onClick = {
+                val intent = Intent(context, Week3Activity::class.java)
+                context.startActivity(intent)
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp),
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.secondary
+            )
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text("Compose Layout", fontSize = 14.sp)
+                Text(
+                    text = "Week 3: Lists and Data",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "Collections, RecyclerViews, birthday tracker",
+                    fontSize = 14.sp
+                )
             }
         }
         
         Spacer(modifier = Modifier.height(32.dp))
         
-        // Learning Topics Section
         Text(
-            text = "Learning Topics",
-            fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
-        )
-        
-        // Topic 1 Button
-        Button(
-            onClick = {
-                val intent = Intent(context, Hour1LayoutsActivity::class.java)
-                context.startActivity(intent)
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(60.dp),
-            shape = RoundedCornerShape(8.dp)
-        ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Making Better Layouts",
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = "Organizing views and making them look nice",
-                    fontSize = 12.sp
-                )
-            }
-        }
-        
-        Spacer(modifier = Modifier.height(12.dp))
-        
-        // Topic 2 Button
-        Button(
-            onClick = {
-                val intent = Intent(context, Hour2FunctionsActivity::class.java)
-                context.startActivity(intent)
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(60.dp),
-            shape = RoundedCornerShape(8.dp)
-        ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Making Things Clickable",
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = "Buttons that do things when you tap them",
-                    fontSize = 12.sp
-                )
-            }
-        }
-        
-        Spacer(modifier = Modifier.height(12.dp))
-        
-        // Topic 3 Button
-        Button(
-            onClick = {
-                val intent = Intent(context, Hour3DiceRollerActivity::class.java)
-                context.startActivity(intent)
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(60.dp),
-            shape = RoundedCornerShape(8.dp)
-        ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Build a Dice Game",
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = "Put everything together to make something fun!",
-                    fontSize = 12.sp
-                )
-            }
-        }
-        
-        Spacer(modifier = Modifier.height(24.dp))
-        
-        Text(
-            text = "Practice exercises to reinforce your learning",
-            fontSize = 14.sp,
+            text = "Explore Android development concepts with examples",
+            fontSize = 16.sp,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(horizontal = 16.dp),
             textAlign = androidx.compose.ui.text.style.TextAlign.Center
         )
     }
