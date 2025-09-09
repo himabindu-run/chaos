@@ -75,7 +75,7 @@ fun AboutMeCompose() {
         
         // Title
         Text(
-            text = "Android Developer & Instructor",
+            text = "Android Developer and Instructor",
             fontSize = 18.sp,
             color = MaterialTheme.colorScheme.primary
         )
