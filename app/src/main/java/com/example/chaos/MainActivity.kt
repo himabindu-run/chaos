@@ -119,8 +119,39 @@ fun MainScreen(modifier: Modifier = Modifier) {
             }
         }
         
+        Spacer(modifier = Modifier.height(20.dp))
+
+        // Week 4 Button
+        Button(
+            onClick = {
+                val intent = Intent(context, Week4Activity::class.java)
+                context.startActivity(intent)
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp),
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.tertiary
+            )
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Week 4: Activity Lifecycle",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "Understand onCreate, onStart, onResume, and more",
+                    fontSize = 14.sp
+                )
+            }
+        }
+
         Spacer(modifier = Modifier.height(32.dp))
-        
+
         Text(
             text = "Explore Android development concepts with examples",
             fontSize = 16.sp,

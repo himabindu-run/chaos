@@ -62,6 +62,30 @@
             android:name=".BirthdayTrackerActivity"
             android:exported="false"
             android:label="Birthday Tracker App" />
+        <activity
+            android:name=".Week4Activity"
+            android:exported="false"
+            android:label="Week 4: Activity Lifecycle" />
+        <activity
+            android:name=".LifecycleDemoActivity"
+            android:exported="false"
+            android:label="Live Lifecycle Monitor" />
+        <activity
+            android:name=".FragmentLifecycleActivity"
+            android:exported="false"
+            android:label="Fragment Lifecycle Demo" />
+        <activity
+            android:name=".ComposeLifecycleActivity"
+            android:exported="false"
+            android:label="Compose Lifecycle Demo" />
+        <activity
+            android:name=".DebuggerTutorialActivity"
+            android:exported="false"
+            android:label="Debugger Tutorial" />
+        <activity
+            android:name=".LogcatTutorialActivity"
+            android:exported="false"
+            android:label="Logcat Tutorial" />
     </application>
 
 </manifest>
